@@ -1,0 +1,200 @@
+.hbanner {
+    display: flex;
+}
+
+.hbanner .banner {
+    flex: 1;
+    background-color: #F2F2F2;
+    padding-top: 0px;
+    height: 534px;
+}
+
+.hbanner h1 {
+    color: #111;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 53px;
+}
+
+.hbanner h2 {
+    color: #1d1d1f;
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 4px;
+}
+
+.hbanner .banner .link a {
+    color: #0090C7;
+    font-size: 17px;
+    line-height: 3;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+
+.hbanner .banner:nth-child(1) {
+    margin: 10px 5px 10px 10px;
+    background-image: url(img/iMac.jpg);
+    background-size: auto 50%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.hbanner .banner:nth-child(2) {
+    margin: 10px 10px 10px 5px;
+    background-image: url(img/watch.jpg);
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #FAFAFA;
+}
+
+
+
+.hbanner1 {
+    display: flex;
+}
+
+.hbanner1 .banner {
+    flex: 1;
+    background-color: #FBFBFD;
+    padding-top: 0px;
+    height: 534px;
+}
+
+.hbanner1 .banner:nth-child(1) {
+    margin: 10px 5px 10px 10px;
+    background-image: url(img/AirPods.jpg);
+    background-size: auto 50%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.hbanner1 .banner:nth-child(2) {
+    background-color: #F0F0F2;
+    margin: 10px 5px 10px 10px;
+    background-image: url(img/buyamac.jpg);
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.hbanner1 h1 {
+    margin-top: 42px;
+    color: #1d1d1f;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .002em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.hbanner1 h2 {
+    margin-top: 4px;
+    color: #1d1d1f;
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.hbanner1 .banner .link a {
+    line-height: 3em;
+    color: #06c;
+    font-size: 17px;
+    line-height: 3.23;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.hbanner2 {
+    display: flex;
+}
+
+.hbanner2 .banner {
+    flex: 1;
+    background-color: #FBFBFD;
+    padding-top: 0px;
+    height: 534px;
+}
+
+.hbanner2 .banner:nth-child(1) {
+    margin: 10px 5px 10px 10px;
+    background-image: url(img/put_to_work.jpg);
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.hbanner2 .banner:nth-child(2) {
+    background-color: #FBFBFD;
+    margin: 10px 5px 10px 10px;
+    background-image: url(img/gift_card.jpg);
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.hbanner2 h1 {
+    margin-top: 42px;
+    color: #f5f5f7;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .002em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.hbanner2 h2 {
+    margin-top: 4px;
+    color: #1d1d1f;
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    ;
+}
+
+.hbanner2 .banner .link a {
+    line-height: 3em;
+    color: #06c;
+    font-size: 17px;
+    line-height: 3.23;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        height: 595px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .banner {
+        height: 445px;
+        background-size: 80%
+    }
+    .hbanner,
+    .hbanner1,
+    .hbanner2 {
+        display: block;
+    }
+    .hbanner .banner,
+    .hbanner1 .bannerm,
+    .hbanner2 .banner {
+        width: 100%;
+    }
+
+    .footer1 ul li a {
+        display: none;
+    }
+}

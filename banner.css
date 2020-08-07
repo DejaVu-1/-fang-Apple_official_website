@@ -1,0 +1,126 @@
+a {
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 517px;
+    background-image: url(img/iPhoneSE.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #131313;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.banner h1 {
+    padding-top: 40px;
+    color: #f5f5f7;
+    font-size: 56px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.banner h2 {
+    color: #f5f5f7;
+    font-size: 27px;
+    line-height: 1.16667;
+    font-weight: 400;
+    letter-spacing: .009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 6px;
+}
+
+.banner p {
+    margin: 6px;
+    font-size: 17px;
+    color: #888;
+}
+
+.banner .link a {
+    font-size: 19px;
+    line-height: 2.21053;
+    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #6bf;
+}
+
+.banner .link a:hover {
+    text-decoration: underline;
+}
+
+.banner .link a:nth-child(3) {
+    margin-left: 26px;
+}
+
+.banner .link {
+    color: #6bf;
+}
+
+.banner1 {
+    background-color: #FAFAFA;
+    background-image: url(img/iPhone11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+.banner1 h1 {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+}
+
+.banner1 h2 {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 400;
+    letter-spacing: .009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+}
+
+.banner1 p {
+    color: #86868b;
+}
+
+.banner1 .link a {
+    color: #06c;
+    line-height: 3em;
+}
+
+.banner2 {
+    background-color: #FAFAFA;
+    background-image: url(img/iPad_Pro.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center bottom;
+}
+
+.banner2 h1 {
+    color: #1d1d1f;
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.banner2 h2 {
+    color: #1d1d1f;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 400;
+    letter-spacing: .009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.banner2 .link a {
+    line-height: 3em;
+    color: #06c;
+}

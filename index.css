@@ -1,0 +1,198 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    width: 100%;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.nav a {
+    color: rgba(255, 255, 254, 0.8);
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+
+.nav .logo {
+    height: 44px;
+    background-image: url(img/logo.svg);
+    /*设置背景图片不重复*/
+    background-repeat: no-repeat;
+    /*背景图片的位置*/
+    background-position: center;
+}
+
+.nav .search {
+    height: 44px;
+    background-image: url(img/search.png);
+    background-size: 20px;
+    /*设置背景图片不重复*/
+    background-repeat: no-repeat;
+    /*背景图片的位置*/
+    background-position: center;
+}
+
+.nav .buy {
+    height: 44px;
+    background-image: url(img/buy.svg);
+    /*设置背景图片不重复*/
+    background-repeat: no-repeat;
+    /*背景图片的位置*/
+    background-position: center 0;
+}
+
+.togglebut {
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.togglebut .line {
+    width: 18px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: none;
+    transition: all 0.5s;
+    /*设置旋转的中心点*/
+    transform-origin: left center;
+}
+
+.togglebut .line:nth-child(1) {
+    position: absolute;
+    left: calc(50% - 9px);
+    top: 14px;
+}
+
+.togglebut .line:nth-child(2) {
+    position: absolute;
+    left: calc(50% - 9px);
+    top: 26px;
+}
+
+.navpage {
+    display: flex;
+    width: 100vh;
+    height: 0vh;
+    transition: all 0.8s;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+}
+
+.navpage .navMain {
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .togglebut {
+        display: flex;
+        position: relative;
+        z-index: 100;
+    }
+    .nav .logo {
+        position: relative;
+        z-index: 100;
+    }
+    .togglebut .line {
+        display: block;
+    }
+    .nav .text,
+    .nav .search {
+        display: none;
+    }
+    .nav .a,
+    .nav label {
+        width: 50px;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    .nav .togglebut {
+        order: 1
+    }
+    .nav .logo {
+        order: 2
+    }
+    .nav .buy {
+        order: 3
+    }
+    #choose:checked~.togglebut .line:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    #choose:checked~.togglebut .line:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+    #choose:checked~.navpage {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #000;
+        color: #FFFFFF;
+        flex-direction: column;
+        padding-top: 54px;
+    }
+    .searchInput {
+        margin: 0 28px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 36px;
+        border-radius: 4px;
+        color: #ccc;
+        background-color: rgba(45, 45, 45, 0.98);
+    }
+    .searchInput .icon {
+        width: 32px;
+        height: 36px;
+        background-image: url(img/search.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 15px;
+    }
+    .searchInput input {
+        flex: 1;
+        margin: 0 5px;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+    }
+    hr {
+        border-color: #333;
+    }
+    .navList {
+        margin: 0 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navList a {
+        width: 100%;
+        height: 44px;
+        color: #fff;
+        text-align: left;
+        border-bottom: 1px solid #333;
+        line-height: 44px;
+    }
+    .navList a:last-child {
+        border-bottom: none;
+    }
+}
